@@ -1,212 +1,153 @@
-# CareUltra
+# CipherMarkets
 
-**A Decentralized Prediction Market Platform**
+> Privacy-preserving prediction markets powered by Zama FHEVM
 
-CareUltra is a revolutionary prediction market platform built on blockchain technology. It enables users to create, participate in, and profit from prediction markets on various topics including sports, politics, technology, and more. Powered by Fully Homomorphic Encryption (FHE), it ensures complete privacy and fairness in all betting activities.
-
-## 🎯 What Makes CareUltra Unique?
-
-### **Decentralized Prediction Markets**
-Unlike traditional betting platforms, CareUltra operates on a decentralized network where users have full control over their funds and predictions.
-
-### **FHE-Powered Privacy**
-All betting data is encrypted using Fully Homomorphic Encryption, ensuring that your predictions and strategies remain completely private.
-
-### **Fair Market Dynamics**
-Our platform uses advanced algorithms to ensure fair pricing and prevent manipulation, creating a transparent and trustworthy betting environment.
-
-### **Global Accessibility**
-Access prediction markets from anywhere in the world, 24/7, without geographical restrictions or centralized control.
-
-## 🚀 Core Features
-
-- **🔒 Private Betting**: All data encrypted with FHE technology
-- **📊 Market Analytics**: Advanced tools for market analysis
-- **💰 Crypto Integration**: Use various cryptocurrencies for betting
-- **🏆 Achievement System**: Earn rewards for accurate predictions
-- **🌐 Global Markets**: Access worldwide prediction markets
-- **📱 Mobile Support**: Bet on the go with our mobile app
-- **🤖 AI Insights**: Machine learning-powered market predictions
-
-## 🎯 Market Types
-
-### **Sports Predictions**
-- Football, basketball, tennis, and more
-- Live betting during events
-- Season-long competitions
-- Custom tournament predictions
-
-### **Financial Markets**
-- Cryptocurrency price predictions
-- Stock market forecasting
-- Economic indicator predictions
-- Commodity price movements
-
-### **Current Events**
-- Political elections and outcomes
-- Weather predictions
-- Technology developments
-- Social and cultural events
-
-### **Custom Markets**
-- User-created prediction markets
-- Community-driven events
-- Niche topic predictions
-- Educational competitions
-
-## 🛠️ Getting Started
-
-### **Prerequisites**
-- MetaMask or compatible Web3 wallet
-- Ethereum Sepolia testnet ETH
-- Basic understanding of prediction markets
-
-### **Installation**
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/bloonenjoyer/CareUltra.git
-   cd careultra
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Configure environment**
-   ```bash
-   cp .env.example .env.local
-   # Add your configuration settings
-   ```
-
-4. **Deploy contracts**
-   ```bash
-   npm run deploy:sepolia
-   ```
-
-5. **Start the application**
-   ```bash
-   cd app
-   npm run dev
-   ```
-
-### **How to Bet**
-
-1. **Connect your wallet** to the platform
-2. **Browse available markets** or create your own
-3. **Analyze market data** and make informed predictions
-4. **Place your bets** using encrypted transactions
-5. **Track your performance** and earnings
-6. **Withdraw profits** when markets resolve
-
-## 🔒 Security & Privacy
-
-### **FHE Technology**
-- All betting data encrypted with Fully Homomorphic Encryption
-- Zero-knowledge proofs for result verification
-- Tamper-proof smart contracts
-- Decentralized market resolution
-
-### **Fair Market Design**
-- Transparent pricing algorithms
-- Anti-manipulation measures
-- Community governance
-- Automated dispute resolution
-
-## 💰 Economics & Rewards
-
-### **Betting Mechanics**
-- Dynamic odds based on market sentiment
-- Liquidity pools for market stability
-- Automated market making
-- Risk management tools
-
-### **Reward System**
-- Earn tokens for accurate predictions
-- Referral bonuses
-- Market creation rewards
-- Community participation incentives
-
-## 🌟 Roadmap
-
-### **Phase 1: Core Platform** ✅
-- Basic prediction markets
-- Wallet integration
-- FHE implementation
-- Web interface
-
-### **Phase 2: Advanced Features** 🚧
-- Custom market creation
-- Advanced analytics
-- Mobile app
-- Social features
-
-### **Phase 3: Professional Tools** 📋
-- API for developers
-- Institutional features
-- Advanced trading tools
-- Cross-chain support
-
-### **Phase 4: Global Expansion** 🔮
-- Multi-language support
-- Regional compliance
-- Partnership programs
-- Educational initiatives
-
-## 🤝 Contributing
-
-We welcome contributions from developers, data scientists, and prediction enthusiasts!
-
-### **How to Contribute**
-- Fork the repository
-- Create a feature branch
-- Implement your changes
-- Submit a pull request
-
-### **Areas We Need Help**
-- 📊 Data analysis and visualization
-- 🔐 Security audits
-- 🎨 UI/UX improvements
-- 📚 Documentation
-- 🧪 Testing and quality assurance
-
-## 📊 Project Statistics
-
-- **Smart Contract Size**: ~3.8 KB (optimized)
-- **Frontend Bundle**: ~380 KB (gzipped)
-- **Gas Cost per Prediction**: ~150,000 gas
-- **Test Coverage**: 88%+ (target: 95%)
-- **Languages**: TypeScript, Solidity, CSS
-
-## 📝 License
-
-This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-Special thanks to:
-- **Zama** for FHEVM technology enabling private betting
-- **Ethereum Foundation** for decentralized infrastructure
-- **The prediction market community** for feedback and support
-- **Web3 developers** for building the future of decentralized betting
-
-## 📞 Support & Community
-
-- **GitHub Issues**: [Report bugs or request features](https://github.com/bloonenjoyer/CareUltra/issues)
-- **Documentation**: [Full documentation](https://github.com/bloonenjoyer/CareUltra/wiki)
-- **Discord**: [Join our community](https://github.com/bloonenjoyer/CareUltra/discussions)
-- **Twitter**: [Follow for updates](https://github.com/bloonenjoyer/CareUltra)
-
-## 🔗 Links
-
-- **Repository**: [https://github.com/bloonenjoyer/CareUltra](https://github.com/bloonenjoyer/CareUltra)
-- **Live Demo**: [Start betting](https://github.com/bloonenjoyer/CareUltra)
-- **Documentation**: [User Guide](https://github.com/bloonenjoyer/CareUltra/wiki)
-- **Markets**: [Browse Markets](https://github.com/bloonenjoyer/CareUltra/markets)
+CipherMarkets is a decentralized prediction market platform that keeps all user positions, orders, and strategies confidential using Zama’s Fully Homomorphic Encryption (FHE) and FHEVM. Create and trade markets with verifiable outcomes while your data stays encrypted end‑to‑end.
 
 ---
 
-**Built with ❤️ for Predictors**
+## Why CipherMarkets
 
-*CareUltra - Where knowledge meets opportunity, and every prediction counts.*
+Traditional prediction markets expose trades and positions on-chain, enabling copy-trading, front‑running and bias. CipherMarkets processes encrypted orders and aggregates encrypted outcomes while preserving public verifiability of market results.
+
+- 🔐 Encrypted positions and orders (no plaintext on-chain)
+- 🔒 On‑chain aggregation over ciphertexts (no decryption in contracts)
+- 🌐 Verifiable market resolution without revealing individual bets
+- 🧩 Fits governance polls, sports/finance/tech predictions, research markets
+
+---
+
+## Zama FHEVM Integration
+
+FHEVM (Fully Homomorphic Encryption Virtual Machine) lets smart contracts compute over encrypted data. With Zama FHE, CipherMarkets keeps your trading intent private while enabling correct settlement.
+
+```
+Trader → FHE Encrypt → Encrypted Order → FHEVM AMM/OrderBook
+                                 └──> Encrypted Aggregation → Verifiable Settlement
+```
+
+Key properties:
+- No plaintext positions or order sizes stored on-chain
+- Encrypted operations (place, cancel, settle)
+- Public proofs and transparent resolution after market close
+
+---
+
+## Getting Started
+
+Prerequisites
+- Node.js 18+
+- MetaMask (or compatible Web3 wallet)
+- Sepolia ETH (testnet)
+
+Setup
+```bash
+git clone https://github.com/bloonenjoyer/CipherMarkets
+cd CipherMarkets
+npm install
+cp .env.example .env.local
+```
+
+Deploy
+```bash
+npm run deploy:sepolia
+```
+
+Run
+```bash
+npm run dev
+```
+
+---
+
+## How It Works
+
+1) Create market: define question, oracle, resolution rules
+2) Place encrypted orders: client encrypts price/size locally
+3) Match/AMM on FHEVM: contracts process encrypted orders
+4) Resolve market: oracle posts outcome, settlement computed
+5) Payouts: users redeem winnings without exposing trades
+
+Privacy model
+- Orders/positions: encrypted
+- Matching/AMM math: over ciphertexts
+- Result: public and verifiable
+- Metadata: minimized; unlinkable user intent
+
+---
+
+## Architecture
+
+| Layer            | Technology         | Role                                 |
+|------------------|--------------------|--------------------------------------|
+| Encryption       | Zama FHE           | Client‑side encryption of orders     |
+| Smart contracts  | Solidity + FHEVM   | Encrypted matching/settlement        |
+| Blockchain       | Ethereum Sepolia   | Decentralized execution and storage  |
+| Frontend         | React + TypeScript | Trading UI and local FHE operations  |
+| Tooling          | Hardhat, Ethers    | Build, test, deploy                  |
+
+Core contracts
+- MarketFactory: creates markets
+- EncryptedOrderBook/AMM: handles encrypted orders/liquidity
+- Oracle/Resolution: posts outcome and triggers settlement
+
+---
+
+## Market Types
+
+- Sports and events (live and pre‑match)
+- Crypto and macro predictions
+- Tech, policy, and research questions
+- DAO governance polls (private choices)
+
+---
+
+## Security & Privacy
+
+- Ballots/orders never decrypted by contracts
+- Zero‑knowledge‑style verifiability of outcomes
+- No plaintext state for orders or positions on‑chain
+- Recommended: independent audits for circuits and contracts
+
+Best practices
+- Use testnet keys during development
+- Rotate FHE keys per market
+- Minimize off‑chain metadata collection
+- Monitor gas impact of FHE operations
+
+---
+
+## Roadmap
+
+- v1: Core markets, encrypted orders, settlement on FHEVM
+- v1.1: Encrypted liquidity pools, fee rebates
+- v1.2: Cross‑market analytics (privacy‑preserving)
+- v2: Mobile UI, cross‑chain deployment, oracle network
+
+---
+
+## Contributing
+
+Contributions welcome:
+- FHE performance and batching
+- Contract security and audits
+- Oracle and resolution mechanisms
+- UX for private trading flows
+
+---
+
+## Resources
+
+- Zama: https://www.zama.ai
+- FHEVM Docs: https://docs.zama.ai/fhevm
+- Sepolia Explorer: https://sepolia.etherscan.io
+
+---
+
+## License
+
+MIT — see LICENSE.
+
+---
+
+Built with Zama FHEVM — encrypted intent, fair settlement, public verifiability.
